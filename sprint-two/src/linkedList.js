@@ -28,21 +28,18 @@ var LinkedList = function() {
   };
 
   list.contains = function(target) {
+    // iterate over the linkedlist
+    // compare the curent node value to target
 
     var current = this.head;
 
-    // iterate over the linkedlist
     while (current) {
-
-      // compare the curent node value to target
       if (current.value === target) {
         return true;
       }
       current = current.next;
     }
-
     return false;
-
   };
 
   return list;
